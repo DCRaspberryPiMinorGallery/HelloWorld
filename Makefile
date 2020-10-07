@@ -1,11 +1,11 @@
 CC = gcc
 
 INC =
-CFLAGS = -g -O0 -Wall
+CFLAGS = -g -O0 -Wall -lrt
 
 OBJS = main.o
 SRCS = main.c
-LIBS = 
+LIBS = -lcurl
 
 TARGET = main
 
