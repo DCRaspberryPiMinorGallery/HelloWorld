@@ -32,20 +32,21 @@ int main(int argc, char* argv[])
 
 double fDoubleSquare(double src, int cnt)
 {
-	double res = src;
-	if (cnt > 1) {
-		for (int i = 2; i <= cnt; i++) {
-			res = res * src;
-		}
-	}
-	else if (cnt == 1) {
-		res = src;
-	}
-	else if (cnt == 0) {
-		res = 1.0f;
-	}
+    double res = src;
 
-	return res;
+    if (cnt > 1) {
+        for (int i = 2; i <= cnt; i++) {
+        res = res * src;
+        }
+    }
+    else if (cnt == 1) {
+        res = src;
+    }
+    else if (cnt == 0) {
+        res = 1.0f;
+    }
+
+    return res;
 }
 
 // 타이머 주기에 따라 호출될 타이머
